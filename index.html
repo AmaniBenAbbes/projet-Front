@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css links -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Bootstrap link -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- jquery link -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+
+    <script src="index.js"></script>
+    <title>FRESHLY RESTAURANT</title>
+</head>
+
+<body>
+    <!-- nav -->
+    <header class="sticky-top header-transparent">
+        <nav class="navbar navbar-expand-md bg-white">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="images/logo.png" alt="FRESHLY RESTAURANT" width="80px">
+                </a>
+                <div>FRESHLY RESTAURANT</div>
+                <!-- le logo -->
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <button class="nav-item text-dark">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </button>
+                        <button class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </button>
+                        <button class="nav-item">
+                            <a class="nav-link" href="#menu">Menu</a>
+                        </button>
+                        <button class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </button>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <!-- slider -->
+            <div id="slider">
+                <img src="images/slider-01.jpg" alt="img1" id="myImg" class="active">
+                <img src="images/slider-02.jpg" alt="img2" >
+                <img src="images/slider-03.jpg" alt="img3" id = "myImg2">
+                <div class="suivant"><span class="material-symbols-outlined">
+                        arrow_forward_ios
+                    </span></div>
+                <div class="precedent"><span class="material-symbols-outlined">
+                        arrow_back_ios
+                    </span></div>
+            </div>
+
+
+            <br><br>
+
+            <h2>Welcome to Frenshly restaurant</h2>
+            <br>
+            <div class="ajustement">
+                <p class="textHome">Welcome to Freshly Restaurant, a classic New York City restaurant, owned by
+                    legendary restaurateur Ted Battely. Here the charm of old New York meets 21st century modernity. In
+                    a historic building that has housed a destination restaurant since the 1930s, Freshly Restaurant
+                    today welcomes a convivial and urbane clientele.
+
+                    Freshly Restaurant offers superb contemporary American cuisine, warm, polished service and beautiful
+                    rooms suitable for a wide range of events.
+
+                    Private dining
+
+                    Elegant and timeless, Freshly Restaurant features four private dining areas that offer real
+                    versatility, whether you are having an intimate birthday dinner for friends or using the entire
+                    townhouse for a wedding celebration or corporate event.
+
+                    Make new memories in our unforgettable private dining rooms. With options for lunches,
+                    presentations, seated dinners, or cocktail receptions, private dining at Patroon is the perfect
+                    opportunity to create your own personal midtown oasis.
+
+                    Whether you are nestled in one of our more intimate rooms for a celebratory dinner or taking over
+                    our entire restaurant for a wedding or special occasion, Freshly Restaurant is the perfect setting
+                    for a unique, undeniably New York event.</p>
+                <div class="imgHome">
+                    <img src="images/location.jpg" width="400" height="260">
+
+                </div>
+            </div>
+            <h2>Special menu </h2>
+            <div class="row justify-content-around mt-5">
+                <!-- menu1 -->
+                <div class="col-12 col-md-5 col-lg-3 mb-3">
+                    <div class="card" id="menumeat">
+                        <p class="card-text text-center">Meat menu</p>
+                        <!-- <p class="click1">
+                            17 $ soft drinks and desert included + taxes
+                        </p> -->
+                        <img
+                            src="images/meat-menu.jpg" class="card-img-top" alt="projet html">
+
+                        <div class="card-body">
+                            <h5 class="font-italic"><a target="_blank" class="btn"></a></h5>
+                            <ul>
+                                <li> meat </li>
+                                <li> salad </li>
+                                <li> drink </li>
+                                <div class="list">
+                                    17 $ soft drinks and desert included + taxes 
+                                </div>
+                            </ul>
+                            <button id= "clic" class="bouttons"><span class="material-symbols-outlined">restaurant_menu</span>
+                                  
+                                see more</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- menu 2 -->
+                <div class="col-12 col-md-5 col-lg-3 mb-3 text">
+                    <div class="card">
+                        <p class="card-text text-center">Fish menu</p>
+                        <img
+                            src="images/fish-menu.jpg" class="card-img-top" alt="projet html">
+
+                        <div class="card-body">
+                            <h5 class="font-italic"><a target="_blank" class="btn"></a></h5>
+                            <ul>
+                                <li> Fish </li>
+                                <li> salad </li>
+                                <li> drink </li>
+                            </ul>
+                            <div class="list2">
+                                19 $ soft drinks and desert included + taxes 
+                            </div>
+                            <button id="clic2" class="bouttons"><span class="material-symbols-outlined">
+                                    restaurant_menu
+                                </span> see more</button>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- menu 3 -->
+                <div class="col-12 col-md-5 col-lg-3 mb-3">
+                    <div class="card">
+                        <p class="card-text text-center">Vegetarien menu</p>
+                       <img
+                            src="images/vegetarian-menu.jpg" class="card-img-top" alt="projet html">
+
+                        <div class="card-body">
+                            <h5 class="font-italic"><a target="_blank" class="btn"></a></h5>
+                            <ul>
+                                <li> Vegetarien </li>
+                                <li> salad </li>
+                                <li> drink </li>
+                            </ul>
+                            <div class="list3">
+                                18 $ soft drinks and desert included + taxes 
+                            </div>
+                            <button id="clic3" class="bouttons"><span class="material-symbols-outlined">
+                                    restaurant_menu
+                                </span> see more</button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <!-- about -->
+        <section id="about">
+            <h2>About us</h2><br>
+            <p>Welcome to Freshly Restaurant, a classic New York City restaurant, owned by legendary restaurateur Ted
+                Battely. Here the charm of old New York meets 21st century modernity. In a historic building that has
+                housed a destination restaurant since the 1930s, Freshly Restaurant today welcomes a convivial and
+                urbane clientele.
+
+                Freshly Restaurant offers superb contemporary American cuisine, warm, polished service and beautiful
+                rooms suitable for a wide range of events.
+
+                Private dining </p> <br>
+            <iframe width="100%" height="315" src="https://www.youtube.com/embed/zOQGu42reWE"
+                title="YouTube video player" frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+            <br><br>><h2>Private dining</h2><br><br>
+            <p>Elegant and timeless, Freshly Restaurant features four private dining areas that offer real versatility,
+                whether you are having an intimate birthday dinner for friends or using the entire townhouse for a
+                wedding celebration or corporate event.
+
+                Make new memories in our unforgettable private dining rooms. With options for lunches, presentations,
+                seated dinners, or cocktail receptions, private dining at Patroon is the perfect opportunity to create
+                your own personal midtown oasis.
+
+                Whether you are nestled in one of our more intimate rooms for a celebratory dinner or taking over our
+                entire restaurant for a wedding or special occasion, Freshly Restaurant is the perfect setting for a
+                unique, undeniably New York event.
+            </p><br>
+            <aside>
+                <div class="photo">
+                    <div>
+                        <p><img src="images/dining-1.jpg" width="650px" alt=""></p>Can welcome up to 24 guests
+                    </div>
+                    <div>
+                        <p><img src="images/dining-2.jpg" width="650px" alt=""></p>Can welcome up to 24 guests
+                    </div>
+
+                </div><br>
+                <div class="photo">
+                    <div>
+                        <p><img src="images/dining-3.jpg" width="650px" alt=""></p>Can welcome up to 24 guests
+                    </div>
+                    <div>
+                        <p><img src="images/dining-4.jpg" width="650px" alt=""></p>Can welcome up to 24 guests
+                    </div>
+                </div>
+
+            </aside>
+        </section>
+        <section id="menu">
+            <br><br>
+            <h3>Details of our menus</h3>
+            <p style="text-align:center">Choose your main course according to your menu !</p>
+            <div id="bouton">
+                <button id="all" style="width:80px">All</button>
+                <button id="meat1" style="width:80px">MEAT</button>
+                <button id="vegan1" style="width:80px">VEGAN</button>
+                <button id="fish1" style="width:80px">FISH</button>
+            </div>
+            <br> <br>
+            <aside>
+                <div class="photo" id="meat">
+                    <div>
+                        <p><img src="menus/meat-01.jpg" width="400px" alt=""></p>
+                    </div>
+                    <div>
+                        <p><img src="menus/meat-02.jpg" width="400px" alt=""></p>
+                    </div>
+                    <div>
+                        <p><img src="menus/meat-03.jpg" width="400px" alt=""></p>
+                    </div>
+
+                </div>
+                <div class="photo" id="vegan">
+                    <div>
+                        <p><img src="menus/vegan-01.jpg" width="400px" alt=""></p>
+                    </div>
+                    <div>
+                        <p><img src="menus/vegan-02.jpg" width="400px" alt=""></p>
+                    </div>
+                    <div>
+                        <p><img src="menus/vegan-03.jpg" width="400px" alt=""></p>
+                    </div>
+                </div>
+                <div class="photo" id="fish">
+                    <div>
+                        <p><img src="menus/fish-01.jpg" width="400px" alt=""></p>
+                    </div>
+                    <div>
+                        <p><img src="menus/fish-02.jpg" width="400px" alt=""></p>
+                    </div>
+                    <div>
+                        <p><img src="menus/fish-03.jpg" width="400px" alt=""></p>
+                    </div>
+                </div>
+
+            </aside>
+            <br>
+            <h3>Deserts</h3>
+            <p style="text-align:center">Here are the deserts you can choose to finish your meal (included in your
+                menu).</p>
+            <aside>
+                <div class="photo">
+                    <div>
+                        <p><img src="menus/desert-01.jpg" width="300px" alt=""></p>
+                    </div>
+                    <div>
+                        <p><img src="menus/desert-02.jpg" width="300px" alt=""></p>
+                    </div>
+                    <div>
+                        <p><img src="menus/desert-03.jpg" width="300px" alt=""></p>
+                    </div>
+
+                </div>
+
+
+            </aside>
+            <br>
+            <h3>Cocktails</h3>
+            <p style="text-align:center"> Soft drinkgs are included, but if you want you can order one of our excellent
+                cocktails (not included in the menu).</p>
+            <aside>
+                <div class="photo">
+                    <div>
+                        <p><img src="menus/drink-01.jpg" width="300px" alt=""></p>
+                    </div>
+                    <div>
+                        <p><img src="menus/drink-02.jpg" width="300px" alt=""></p>
+                    </div>
+                    <div>
+                        <p><img src="menus/desert-03.jpg" width="300px" alt=""></p>
+                    </div>
+
+                </div>
+
+
+            </aside>
+
+
+        </section>
+        <section id="contact">
+            <br>
+            <h2>Contact us</h2>
+            <br>
+            <p style="text-align:center">If your want to make a reservation, please complete this form.</p>
+            <p style="text-align:center">Fields with * are required.</p>
+
+            <div class="col-lg-12" id="info">
+                <form class="email-form">
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                            <div>
+                                <label for="validationTooltip01" class="form-label">Date</label>
+                                <input type="date" name="date" class="form-control" id="date" placeholder="jj/mm/aaaa"
+                                    required> <br>
+                                <label for="validationTooltip01" class="form-label">Time</label>
+                                <input type="time" name="time" class="form-control" id="time" placeholder="--:--"
+                                    required> <br>
+                                <label for="validationTooltip01" class="form-label">Number of guests</label>
+                                <input type="number" name="number" min="1" class="form-control" id="number"
+                                    placeholder="" required>
+                            </div>
+
+                        </div>
+                        <div class="col-md-6 form-group">
+                            <div>
+                                <label for="validationTooltip01" class="form-label">Date</label>
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Name"
+                                    required> <br>
+                                <label for="validationTooltip01" class="form-label">Time</label>
+                                <input type="email" name="email" class="form-control" id="email" placeholder="Email"
+                                    required> <br>
+                                <label id="invite" for="validationTooltip01" class="form-label">Number of guests</label>
+                                <input type="text" name="number" min="1" class="form-control" id="number"
+                                    placeholder="Phone" required>
+                            </div>
+                        </div> <br>
+
+                        <div class="col-lg-12">
+                            <label for="validationTooltip01" class="form-label">Further request</label>
+                            <textarea class="form-control" name="message" rows="6" placeholder="Message"
+                                required></textarea>
+                            <div class="text-center"><br><button class="boutonEnvoyer" class="text-center"
+                                    type="submit"><span class="hEnvoyer">RESERVE</span></button><br></div>
+                        </div> <br> <br>
+
+                </form>
+                <br><br><br><br>
+
+            </div>
+            <br>
+            </div>
+            <br>
+            <h3>Our location</h3> <br>
+            <p style="text-align:center">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d188.91372300738647!2d-73.98585335774922!3d40.74839587749728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b3117469%3A0xd134e199a405a163!2sEmpire%20State%20Building!5e0!3m2!1sfr!2sfr!4v1673944444423!5m2!1sfr!2sfr"
+                    width="100%" height="350" style="border:1px black solid;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </p>
+        </section>
+    </main>
+</body>
+<br> <br><br> <br><br> <br><br> <br>
+<footer class="fixed-bottom">
+    <div id="information">
+        <div style="text-align: start;">
+            <h4>Opening hours</h4>
+            <p> ------------------------</p>
+            <p>
+                <o1>
+                    <li>Monday closed</li>
+                    <li>Tue-Fri 9am-10pm</li>
+                    <li>Sat-Sun 5am-10pm</li>
+                </o1>
+            </p>
+        </div>
+        <div style="text-align: center;">
+            <h4>Contact</h4>
+            <p> ----------------------</p>
+            <div>13 Christophe street,</div>
+            <div>New York</div>
+            <div>+ 01 2000 3000</div>
+        </div>
+        <div style="text-align: center;">
+            <h4>Social Network</h4>
+            <p> ---------------------------</p>
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.png"></a>
+            <a href="https://www.instagram.com/" target="_blank"><img src="images/instagram.png" width="35px"></a>
+
+
+
+        </div>
+</footer>
+
+</html>

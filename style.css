@@ -1,0 +1,174 @@
+body {
+
+    margin: 80px 200px;
+    color: black;
+    text-align: center;
+    width: 100%;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+
+/* les boutons */
+button {
+    border: none;
+    background-color: antiquewhite;
+}
+
+.nav-item {
+    color: black !important;
+    font-size: 16px;
+    margin: 4px 10px;
+}
+
+a {
+    color: black !important;
+
+}
+
+
+#myImg {
+    width: 100%;
+    z-index: 10;
+
+}
+
+/* slider */
+
+#slider {
+    height: 50vh;
+    position: relative;
+}
+
+#slider img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+
+}
+
+
+
+.suivant,
+.precedent {
+    font-size: large;
+    color: white;
+    position: absolute;
+    top: 50%;
+}
+
+.suivant {
+    right: 1rem;
+    z-index: 1000;
+}
+
+.precedent {
+    left: 1rem;
+    z-index: 1000;
+}
+
+
+/* les titres */
+h2 {
+    text-align: center;
+}
+
+.ajustement {
+    display: flex;
+
+}
+
+.textHome {
+    width: 70%;
+    text-align: justify;
+}
+
+.imgHome {
+    width: 30%;
+    text-align: end;
+}
+
+/* les menus */
+.card {
+    background-color: antiquewhite !important;
+}
+
+.bouttons {
+    background-color: rgb(161, 126, 74);
+}
+
+
+
+p {
+    text-align: justify;
+}
+
+.photo {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: center;
+
+}
+
+aside {
+    background: antiquewhite;
+    padding: 30px;
+}
+
+h3 {
+    text-align: center;
+}
+
+#bouton {
+    text-align: center;
+}
+
+#info {
+    background: antiquewhite;
+}
+
+.boutonEnvoyer {
+    background-color: rgb(161, 126, 74);
+    text-align: center;
+
+    width: 200px;
+}
+
+
+footer {
+    background: url("images/footer-bg.jpg") top right;
+    background-size: cover;
+    position: relative;
+    color: antiquewhite;
+
+
+    height: 160px;
+
+}
+
+#information {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    text-align: center;
+
+}
+
+/* Media queries */
+
+
+    
+/* petit ecran */
+@media screen and (max-width :1100px) {
+    .body{
+        margin: auto;
+        padding-left: 0px;
+        padding-right: 0px;
+        display:block;
+    }
+    .main {
+        width : 100%;
+    }
+}
